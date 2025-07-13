@@ -33,3 +33,4 @@ function App() {
 }
 
 export default App
+<div class="text-2xl font-bold text-blue-600 p-4">👋 Preview build!</div>
