@@ -1,6 +1,5 @@
 // src/components/Heading.tsx
 import React from 'react';
-import React, { useState } from 'react';
 
 const Heading = () => {
   return (
@@ -18,7 +17,7 @@ const Heading = () => {
 export default Heading;
 
 
-const Heading = () => {
+const Heading2 = () => {
     return (
         <header className="bg-white-500 py-10 text-left">
             <h3 className="text-2xl font-medium text-white-600 text-left">
