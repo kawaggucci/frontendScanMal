@@ -1,7 +1,7 @@
 import React from 'react';
 import Heading from './c-components/UploadHeading';
 import UploadInstructions from './c-components/UploadInstructions';
-import ScanButton from './c-components/c-Button';
+import ScanButton from './c-components/c-button';
 
 function App() {
   return (
