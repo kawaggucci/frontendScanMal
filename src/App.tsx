@@ -1,19 +1,16 @@
 import React from 'react';
+import Heading from './components/Heading';
+import UploadInstructions from './components/UploadInstructions';
+import ScanButton from './components/ScanButton';
 
-const ScanButton = () => {
-  const handleClick = () => {
-    console.log('clicked');
-    // TODO: add actual upload logic here
-  };
-
+function App() {
   return (
-    <div className="mt-4 text-left px-6">
-      <button
-        onClick={handleClick}
-        className="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded"
-      >
-        Scan File
-      </button>
+    <div className="min-h-screen bg-gray-50">
+      <Heading />
+      <UploadInstructions />
+      <ScanButton />
     </div>
   );
-};
+}
+
+export default App;
