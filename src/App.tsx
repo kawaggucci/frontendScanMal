@@ -17,5 +17,3 @@ const ScanButton = () => {
     </div>
   );
 };
-
-export default ScanButton;
