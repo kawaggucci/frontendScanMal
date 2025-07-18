@@ -7,7 +7,7 @@ const UploadInstructions = () => {
         Upload file
       </h3>
       <p className="text-base text-gray-600 leading-relaxed mt-2">
-        Please upload your file in .pdf, .txt, or .docx format. Click the button once it's uploaded and wait. We'll analyse it and get back to you soon!
+        Please upload your file in .json, .pdf, .txt, or .docx format. Click the button once it's uploaded and wait. We'll analyse it and get back to you soon!
       </p>
     </header>
   );
