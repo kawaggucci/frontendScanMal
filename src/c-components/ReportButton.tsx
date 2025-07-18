@@ -5,8 +5,9 @@ const ReportButton = () => {
 
   const handleClick = async () => {
     try {
-      // ⏳ Simulate API request (replace with real endpoint)
-      const response = await fetch('https://example.com/report-status'); // <- your real API here
+      const response = await fetch('https://upload-api-api112358.azurewebsites.net/upload', {
+        method: 'GET', 
+      });
 
       if (!response.ok) {
         setReportMessage("Thank you for your patience, we're getting your report.");
@@ -15,20 +16,19 @@ const ReportButton = () => {
 
       const data = await response.json();
 
-      // 🎯 Example check – change this logic based on your real API response shape
       switch (data.status) {
         case 'safe':
-          setReportMessage('✅ This file is safe to use.');
+          setReportMessage('This file is safe to use.');
           break;
         case 'danger':
-          setReportMessage('⚠️ We have some security concerns about this file.');
+          setReportMessage('We have some security concerns about this file.');
           break;
         default:
-          setReportMessage("📄 Report is available, but couldn't be interpreted.");
+          setReportMessage("Report is available, but couldn't be interpreted.");
       }
     } catch (error) {
       console.error('Report fetch failed:', error);
-      setReportMessage('❌ Error fetching report. Please try again later.');
+      setReportMessage('Error fetching report. Please try again later.');
     }
   };
 
@@ -41,12 +41,12 @@ const ReportButton = () => {
         Get Report
       </button>
 
-      {/* 📝 Report Message Display */}
       <p className="mt-2 text-sm text-gray-800">
-        {reportMessage || '🔄 Refresh here for your report.'}
+        {reportMessage || 'Refresh here for your report.'}
       </p>
     </div>
   );
 };
 
 export default ReportButton;
+
