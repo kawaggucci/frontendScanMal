@@ -37,6 +37,8 @@ const ScanButton = () => {
       const result = await response.json();
       setMessage('Upload successful!');
       console.log('Server response:', result);
+      localStorage.setItem('file_id', result.file_id);
+
     } catch (error: any) {
       console.error('Error uploading file:', error);
       setMessage(`Upload failed: ${error.message}`);
