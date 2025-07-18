@@ -7,7 +7,7 @@ import ReportButton from './c-components/ReportButton';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-r from-black-900 to-blue-800 ">
       <Heading />
       <UploadInstructions />
       <ScanButton />
